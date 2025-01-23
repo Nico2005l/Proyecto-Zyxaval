@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "scripts": {
+  "start:frontend": "cd proyecto-zyxaval-frontend && npm start",
+  "start:backend": "cd proyecto-zyxaval-backend && node index.js",
+  "start:all": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+}
+}
