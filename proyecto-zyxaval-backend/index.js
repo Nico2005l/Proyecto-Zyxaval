@@ -36,6 +36,7 @@ db.serialize(() => {
     jarId INTEGER,
     bodyColor TEXT
   )`);
+  
 });
 
 module.exports = db;

@@ -35,12 +35,9 @@ function NavBar(props) {
             </svg>
           </button>
         </div>
-        <ul className={`flex-col sm:flex-row sm:flex space-x-6 flex-wrap ${menuOpen ? 'flex' : 'hidden'} sm:flex transition-all duration-300 ease-in-out`}>
+        <ul className={`flex-col space-x-6 transition-all duration-300 ease-in-out pt-4 justify-start sm:pt-0 sm:flex-row sm:flex  ${menuOpen ? 'flex' : 'hidden'} `}>
           {props.sites.map((site, index) => (
-            <li key={index} className="flex items-center space-x-2">
-
-              
-              
+            <li key={index} className="py-2 ml-5"> 
               <Link
                 to={site.url === '/login' && isLoggedIn ? '/profile' : site.url}
                 className={`text-white hover:text-blue-400 flex flex-row gap-2 ${location.pathname === site.url || (location.pathname === '/profile' && site.url === '/login') ? 'font-bold' : ''}`}

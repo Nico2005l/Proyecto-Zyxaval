@@ -73,10 +73,10 @@ function Profile() {
       {profileData.pokemon ? 
         <div className='flex flex-col justify-between gap-4 mb-8'>
           <h1 className='text-3xl capitalize font-light mb-4'>Pokemon Favorito: {profileData.pokemon}</h1> 
-          <div className='grid grid-cols-3 gap-4'>
-            <img className='size-min rounded-xl p-4 bg-slate-200 border-4 border-zinc-300 transition-transform transform hover:rotate-6 duration-300 ease-in-out' src={`https://img.pokemondb.net/sprites/home/normal/${profileData.pokemon}.png`} alt={profileData.pokemon}/>
-            <img className='size-min rounded-xl p-4 bg-slate-200 border-4 border-zinc-300 transition-transform transform hover:rotate-6 duration-300 ease-in-out' src={`https://img.pokemondb.net/sprites/home/shiny/${profileData.pokemon}.png`} alt={`${profileData.pokemon} shiny`} />
-            <img className='size-min rounded-xl p-4 bg-slate-200 border-4 border-zinc-300 transition-transform transform hover:rotate-6 duration-300 ease-in-out' src={`https://img.pokemondb.net/sprites/scarlet-violet/normal/${profileData.pokemon}.png`} alt={`${profileData.pokemon} `} />
+          <div className='grid grid-cols-3 gap-4 items-stretch'>
+            <img className='rounded-xl p-4 bg-slate-200 border-4 border-zinc-300 transition-transform transform hover:rotate-6 duration-300 ease-in-out' src={`https://img.pokemondb.net/sprites/home/normal/${profileData.pokemon}.png`} alt={profileData.pokemon}/>
+            <img className='rounded-xl p-4 bg-slate-200 border-4 border-zinc-300 transition-transform transform hover:rotate-6 duration-300 ease-in-out' src={`https://img.pokemondb.net/sprites/home/shiny/${profileData.pokemon}.png`} alt={`${profileData.pokemon} shiny`} />
+            <img className='rounded-xl p-4 bg-slate-200 border-4 border-zinc-300 transition-transform transform hover:rotate-6 duration-300 ease-in-out' src={`https://img.pokemondb.net/sprites/go/normal/${profileData.pokemon}.png`} alt={`${profileData.pokemon} `} />
 
           </div>
         </div>
